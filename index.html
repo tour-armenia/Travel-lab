@@ -5,168 +5,153 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Travel Lab</title>
 
-<!-- GOOGLE FONT -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
 }
 
 body {
-  background: #f9fafb;
-  color: #222;
+  background:#0b0b0b;
+  color:#e5e5e5;
 }
 
 /* CONTAINER */
 .container {
-  width: 90%;
-  max-width: 1100px;
-  margin: auto;
+  width:90%;
+  max-width:1100px;
+  margin:auto;
 }
 
 /* HERO */
 .hero {
-  height: 100vh;
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+  height:100vh;
+  background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
   url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #fff;
+  background-size:cover;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
 }
 
 .hero h1 {
-  font-size: 42px;
+  font-size:44px;
 }
 
 .hero p {
-  margin: 15px 0 25px;
+  margin:20px 0;
+  color:#bbb;
 }
 
 .btn {
-  padding: 12px 28px;
-  background: #4f46e5;
-  color: #fff;
-  border-radius: 30px;
-  text-decoration: none;
-  transition: 0.3s;
+  padding:12px 30px;
+  background:#d4af37;
+  color:#000;
+  border-radius:30px;
+  text-decoration:none;
+  transition:0.3s;
 }
 
 .btn:hover {
-  background: #3730a3;
+  background:#f5d76e;
 }
 
 /* TRUST */
 .trust {
-  text-align: center;
-  margin-top: -50px;
+  text-align:center;
+  margin-top:-50px;
 }
 
 .trust-box {
-  background: #fff;
-  padding: 25px;
-  border-radius: 16px;
-  display: inline-block;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  background:#111;
+  padding:25px;
+  border-radius:16px;
+  display:inline-block;
+  border:1px solid #222;
 }
 
 .trust-box h2 {
-  color: #4f46e5;
+  color:#d4af37;
 }
 
-/* ABOUT */
-.about {
-  padding: 80px 0;
-  text-align: center;
+/* SECTION */
+.section {
+  padding:80px 0;
 }
 
-/* FEATURES */
-.features {
-  padding: 80px 0;
-  background: #fff;
+.section h2 {
+  text-align:center;
+  margin-bottom:30px;
+  color:#fff;
 }
 
+/* GRID */
 .grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
 }
 
 .card {
-  background: #f9fafb;
-  padding: 30px;
-  border-radius: 16px;
-  text-align: center;
-  transition: 0.3s;
+  background:#111;
+  padding:30px;
+  border-radius:16px;
+  border:1px solid #222;
+  transition:0.3s;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transform:translateY(-5px);
+  border-color:#d4af37;
+}
+
+/* FORMULA */
+.formula {
+  text-align:center;
+  font-size:20px;
+  margin-top:20px;
+  color:#d4af37;
 }
 
 /* REVIEWS */
-.reviews {
-  padding: 80px 0;
-}
-
-.review-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-}
-
 .review {
-  background: #fff;
-  padding: 25px;
-  border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-}
-
-.review p {
-  font-size: 14px;
-  color: #555;
-}
-
-.review h4 {
-  margin-top: 10px;
+  background:#111;
+  padding:25px;
+  border-radius:16px;
+  border:1px solid #222;
 }
 
 /* CONTACT */
 .contact {
-  padding: 80px 0;
-  text-align: center;
+  text-align:center;
 }
 
 .contact a {
-  color: #4f46e5;
-  text-decoration: none;
+  color:#d4af37;
+  text-decoration:none;
 }
 
 /* FOOTER */
 .footer {
-  text-align: center;
-  padding: 20px;
-  background: #111;
-  color: #aaa;
+  text-align:center;
+  padding:20px;
+  background:#000;
+  color:#777;
 }
 
 /* MOBILE */
 @media(max-width:768px){
-  .grid,
-  .review-grid {
-    grid-template-columns: 1fr;
+  .grid {
+    grid-template-columns:1fr;
   }
 
   .hero h1 {
-    font-size: 28px;
+    font-size:28px;
   }
 }
 </style>
@@ -177,8 +162,8 @@ body {
 <!-- HERO -->
 <section class="hero">
   <div>
-    <h1>Explore the World with Travel Lab</h1>
-    <p>Discover unique journeys and unforgettable experiences</p>
+    <h1>Travel Lab</h1>
+    <p>Where Comfort + Quality × Emotions create unforgettable journeys</p>
     <a href="#" class="btn">Start Your Journey</a>
   </div>
 </section>
@@ -187,82 +172,102 @@ body {
 <section class="trust">
   <div class="trust-box">
     <h2>2000+</h2>
-    <p>Happy Travelers</p>
+    <p>Trusted Travelers</p>
   </div>
 </section>
 
 <!-- ABOUT -->
-<section class="about container">
-  <h2>About Us</h2>
-  <p>We create personalized travel experiences with a modern and luxury touch.</p>
+<section class="section container">
+  <h2>About Travel Lab</h2>
+  <p style="text-align:center; color:#aaa;">
+    Travel Lab is not just a tour agency — it's a place where journeys are created with precision, care, and creativity.
+    We design each trip as a unique experience, combining comfort, quality, and emotions.
+  </p>
+
+  <div class="formula">
+    (Comfort + Quality) × Emotions
+  </div>
+</section>
+
+<!-- WHY LAB -->
+<section class="section container">
+  <h2>Why “Lab”?</h2>
+  <p style="text-align:center; color:#aaa;">
+    Because we treat travel like a formula. Every journey is carefully crafted, tested, and refined 
+    to deliver the perfect balance of comfort, quality, and unforgettable emotions.
+  </p>
 </section>
 
 <!-- FEATURES -->
-<section class="features">
+<section class="section">
   <div class="container">
-    <h2 style="text-align:center; margin-bottom:40px;">Why Choose Us</h2>
+    <h2>Our Services</h2>
 
     <div class="grid">
       <div class="card">
-        <h3>Custom Tours</h3>
-        <p>Tailored travel experiences just for you.</p>
+        <h3>Custom Travel Plans</h3>
+        <p>Personalized journeys designed for your lifestyle and preferences.</p>
       </div>
 
       <div class="card">
-        <h3>Expert Guides</h3>
-        <p>Professional and experienced travel experts.</p>
+        <h3>Visa Support</h3>
+        <p>In 2025, we achieved a 99% visa success rate, helping clients travel stress-free.</p>
       </div>
 
       <div class="card">
-        <h3>Best Prices</h3>
-        <p>Affordable luxury travel packages.</p>
+        <h3>New Destinations</h3>
+        <p>We constantly explore and offer fresh, unique travel destinations worldwide.</p>
       </div>
     </div>
   </div>
 </section>
 
+<!-- EXTRA INFO -->
+<section class="section container">
+  <h2>Our Mission</h2>
+  <p style="text-align:center; color:#aaa;">
+    Our mission is to combine comfort, quality, and emotion into every journey, creating travel experiences 
+    that stay with you for a lifetime.
+  </p>
+</section>
+
 <!-- REVIEWS -->
-<section class="reviews container">
-  <h2 style="text-align:center; margin-bottom:40px;">What Our Clients Say</h2>
+<section class="section container">
+  <h2>Client Experience</h2>
 
-  <div class="review-grid">
-
+  <div class="grid">
     <div class="review">
-      <p>“Amazing experience! Everything was perfectly organized.”</p>
-      <h4>⭐⭐⭐⭐⭐ - Anna</h4>
+      <p>“Everything was perfectly organized. Truly premium experience.”</p>
+      <h4>⭐⭐⭐⭐⭐</h4>
     </div>
 
     <div class="review">
-      <p>“The best travel service I’ve ever used. Highly recommend!”</p>
-      <h4>⭐⭐⭐⭐⭐ - David</h4>
+      <p>“Visa process was smooth and fast. Highly professional team.”</p>
+      <h4>⭐⭐⭐⭐⭐</h4>
     </div>
 
     <div class="review">
-      <p>“Beautiful destinations and great support throughout the trip.”</p>
-      <h4>⭐⭐⭐⭐⭐ - Maria</h4>
+      <p>“They created a journey I will never forget.”</p>
+      <h4>⭐⭐⭐⭐⭐</h4>
     </div>
-
   </div>
 </section>
 
 <!-- CONTACT -->
-<section class="contact container">
-  <h2>Contact Us</h2>
+<section class="section contact container">
+  <h2>Contact</h2>
 
-  <p><strong>📍 Address:</strong><br>
-  Yerevan/Kapan<br>
+  <p>📍 Yerevan/Kapan<br>
   11/5 Gevorg Chaush Street, Yerevan, Armenia</p>
 
-  <p><strong>📞 Phone:</strong><br>
-  <a href="tel:+37477020020">+374 77 020 020</a></p>
+  <p>📞 <a href="tel:+37477020020">+374 77 020 020</a></p>
 
-  <p><strong>📧 Email:</strong><br>
-  <a href="mailto:info@travellab.com">info@travellab.com</a></p>
+  <p>📧 <a href="mailto:info@travellab.com">info@travellab.com</a></p>
 </section>
 
 <!-- FOOTER -->
 <div class="footer">
-  © 2026 Travel Lab
+  © 2026 Travel Lab — Crafted with precision
 </div>
 
 </body>
