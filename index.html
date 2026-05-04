@@ -15,6 +15,11 @@
   font-family:'Poppins',sans-serif;
 }
 
+/* SMOOTH SCROLL */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background:#0b0b0b;
   color:#e5e5e5;
@@ -163,8 +168,9 @@ body {
 <section class="hero">
   <div>
     <h1>Travel Lab</h1>
-    <p>Where (Comfort + Quality) × Emotions create unforgettable journeys</p>
-    <a href="#" class="btn">Start Your Journey</a>
+    <p>Where Comfort + Quality × Emotions create unforgettable journeys</p>
+    <!-- ✅ BUTTON NOW SCROLLS TO CONTACT -->
+    <a href="#contact" class="btn">Start Your Journey</a>
   </div>
 </section>
 
@@ -193,7 +199,7 @@ body {
 <section class="section container">
   <h2>Why “Lab”?</h2>
   <p style="text-align:center; color:#aaa;">
-    Because we treat travel like a formula. Every journey is carefully crafted, tested, and refined 
+    Because we treat travel like a formula. Every journey is carefully crafted and refined 
     to deliver the perfect balance of comfort, quality, and unforgettable emotions.
   </p>
 </section>
@@ -206,29 +212,20 @@ body {
     <div class="grid">
       <div class="card">
         <h3>Custom Travel Plans</h3>
-        <p>Personalized journeys designed for your lifestyle and preferences.</p>
+        <p>Personalized journeys designed for your lifestyle.</p>
       </div>
 
       <div class="card">
         <h3>Visa Support</h3>
-        <p>In 2025, we achieved a 99% visa success rate, helping clients travel stress-free.</p>
+        <p>In 2025, we achieved a 99% visa success rate.</p>
       </div>
 
       <div class="card">
         <h3>New Destinations</h3>
-        <p>We constantly explore and offer fresh, unique travel destinations worldwide.</p>
+        <p>We constantly offer fresh travel experiences worldwide.</p>
       </div>
     </div>
   </div>
-</section>
-
-<!-- EXTRA INFO -->
-<section class="section container">
-  <h2>Our Mission</h2>
-  <p style="text-align:center; color:#aaa;">
-    Our mission is to combine comfort, quality, and emotion into every journey, creating travel experiences 
-    that stay with you for a lifetime.
-  </p>
 </section>
 
 <!-- REVIEWS -->
@@ -237,24 +234,25 @@ body {
 
   <div class="grid">
     <div class="review">
-      <p>“Everything was perfectly organized. Truly premium experience.”</p>
+      <p>“Everything was perfectly organized.”</p>
       <h4>⭐⭐⭐⭐⭐</h4>
     </div>
 
     <div class="review">
-      <p>“Visa process was smooth and fast. Highly professional team.”</p>
+      <p>“Visa process was smooth and fast.”</p>
       <h4>⭐⭐⭐⭐⭐</h4>
     </div>
 
     <div class="review">
-      <p>“They created a journey I will never forget.”</p>
+      <p>“Unforgettable journey!”</p>
       <h4>⭐⭐⭐⭐⭐</h4>
     </div>
   </div>
 </section>
 
 <!-- CONTACT -->
-<section class="section contact container">
+<!-- ✅ IMPORTANT: THIS ID MATCHES BUTTON -->
+<section id="contact" class="section contact container">
   <h2>Contact</h2>
 
   <p>📍 Yerevan/Kapan<br>
@@ -267,7 +265,7 @@ body {
 
 <!-- FOOTER -->
 <div class="footer">
-  © 2026 Travel Lab — Crafted with precision
+  © 2026 Travel Lab
 </div>
 
 </body>
